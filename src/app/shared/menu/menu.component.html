@@ -1,0 +1,25 @@
+<header>
+    <h1>RouterLink - Angular</h1>
+    <nav>
+        <ul>
+            <li>
+                <a routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Home</a>             
+            </li>
+            <br>
+            <br>
+            <li>
+                <a routerLink="/about" [routerLinkActive]="['active']">About</a>
+            </li>
+            <br>
+            <br>
+            <li>
+                <a routerLink="/dashboard" [routerLinkActive]="['active']">Dashboard</a>
+            </li>
+            <br>
+            <br>
+            <li>
+                <a [routerLink]="['/404']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Error</a>
+            </li>
+        </ul>
+    </nav>
+</header>
